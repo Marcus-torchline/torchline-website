@@ -3,6 +3,7 @@ export interface DatabaseResponse {
   data?: any;
   message?: string;
   error?: string;
+  stats?: any;
 }
 
 export interface DatabaseItem {

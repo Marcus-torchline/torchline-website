@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { TrendingUp, DollarSign, Users, Package, BarChart3 } from "lucide-react";
+import { TrendingUp, DollarSign, Users, Package } from "lucide-react";
 import { AdvancedDatabaseAPI } from "../services/advancedDatabaseApi";
 import { useAuth } from "../context/AuthContext";
 import { AnalyticsData } from "../types/AdvancedFeatures";
@@ -88,7 +88,7 @@ const AnalyticsDashboard: React.FC = () => {
                 fill="#8884d8"
                 dataKey="value"
               >
-                {quoteStatusData.map((entry, index) => (
+                {quoteStatusData.map((_, index) => (
                   <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                 ))}
               </Pie>

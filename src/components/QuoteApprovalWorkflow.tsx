@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { CheckCircle, XCircle, DollarSign, Clock } from "lucide-react";
+import { CheckCircle, XCircle } from "lucide-react";
 import { AdvancedDatabaseAPI } from "../services/advancedDatabaseApi";
 import { useAuth } from "../context/AuthContext";
 

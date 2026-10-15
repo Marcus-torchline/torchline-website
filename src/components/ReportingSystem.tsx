@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FileText, Download, Calendar, Mail } from "lucide-react";
+import { Download, Calendar } from "lucide-react";
 import { AdvancedDatabaseAPI } from "../services/advancedDatabaseApi";
 import { useAuth } from "../context/AuthContext";
 import jsPDF from "jspdf";

@@ -1,4 +1,3 @@
-import axios from "axios";
 import { DatabaseAPI } from "./databaseApi";
 import { QuoteApproval, PriceCalculation, FileMetadata, AnalyticsData, RealtimeUpdate, Message, ShipmentTracking, Report } from "../types/AdvancedFeatures";
 import { DatabaseResponse } from "../types/Database";
@@ -238,7 +237,7 @@ export class AdvancedDatabaseAPI extends DatabaseAPI {
     return Object.values(customers);
   }
 
-  private calculateRevenueForecast(quotes: any[]): any[] {
+  private calculateRevenueForecast(_quotes: any[]): any[] {
     const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
     return months.map(month => ({
       month,
